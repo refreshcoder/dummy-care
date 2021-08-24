@@ -27,7 +27,7 @@
 
     <div class="title">
       <div class="title-logo">
-        <img src="@/assets/locklock.png" @click="toggleConfig" />
+        <img src="@/assets/locklock-1.png" @click="toggleConfig" />
       </div>
       <div class="title-text">
         <div class="main-text">挂号成功</div>
