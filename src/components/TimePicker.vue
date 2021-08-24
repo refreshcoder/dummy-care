@@ -3,6 +3,7 @@
   <van-action-sheet v-model:show="show">
     <van-datetime-picker
       :type="type"
+      v-model="inner"
       title="选择时间"
       @confirm="confirm"
       @cancel="close"
@@ -22,6 +23,7 @@ export default {
   setup(props, { emit }) {
     const state = reactive({
       current: props.modelValue,
+      inner: new Date(props.modelValue),
       type: props.type,
       show: false,
     });
