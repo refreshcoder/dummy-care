@@ -112,8 +112,8 @@ export default {
   },
   setup() {
     const state = reactive({
-      payTime: "2021-08-10 08:00",
-      orderDate: "2021-08-10",
+      payTime: moment().format("YYYY-MM-DD HH:mm"),
+      orderDate: moment().format("YYYY-MM-DD"),
       number: randomRange(3, 18),
       type: "预约挂号",
       hospital: "成都市武侯区第三人民医院",
